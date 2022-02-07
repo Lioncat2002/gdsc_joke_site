@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Adding materialize css-->
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+     <!--Custom css-->
+     <link rel="stylesheet" href="./styles/styles.css">
+
+     <!--Custom js-->
+     <script src="./js/misc.js"></script>
+     <script src="./js/joke_fetcher.js"></script>
+    <title>Kitty Jokes</title>
+</head>
+<body>
+
+    <!--Navbar-->
+    <nav>
+        <div class="nav-wrapper indigo darken-4">
+          <a href="#" class="brand-logo">Kitty Jokes</a>
+          <ul id="nav-mobile" class="right ">
+           
+            <li><img class="icon"
+              src="https://popcat.click/twitter-card.jpg"alt="icon" 
+              onmouseover="hover(this)" onmouseout="unhover(this)"></li>
+          </ul>
+        </div>
+      </nav>
+
+    <!--Joke Display-->
+
+    <!--Joke selection-->
+    <div class="input-field col s12">
+        <select id="joketype">
+          <option value="" disabled selected>Select a Joke type</option>
+          <option value="1">Programmer</option>
+          <option value="2">Dank</option>
+          <option value="3">Dad</option>
+        </select>
+        <label>Materialize Select</label>
+      </div>
+      
+      <!--Joke Card-->
+
+      <div class="row">
+          <div class="col s6 centered">
+
+            <div class="card teal white-text" id="joke_display">
+                
+            </div>
+
+          </div>
+          <div class="col s6 centered" style="min-height: 400px;">
+              <center>
+                <a onclick="fetch_joke()">
+                  <img src="./assets/cat.png" class="normal" 
+                  onmouseover="rotate(this)" onmouseout="normal(this)"
+                   alt=""></a>
+              </center>
+                
+              
+              
+        </div>
+      </div>
+
+
+
+      
+    
+    
+</body>
+</html>

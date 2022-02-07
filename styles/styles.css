@@ -1,0 +1,35 @@
+div{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.card {
+    height:200px;
+}
+.centered{
+    transform: translate(0,50%);
+}
+.icon{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+.normal{
+    width:200px;
+    height: 200px;
+}
+.rotate {
+    width:200px;
+    height: 200px;
+    animation: rotation 3s infinite linear;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
